@@ -1,0 +1,448 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana;
+}
+
+img {
+  max-width: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.container {
+  display: flex; /*Enable Flexbox*/
+  gap: 10px; /*Add spacing between columns*/
+  padding: 20px;
+}
+
+.column {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/*Define the sizes of the columns*/
+.column-1 {
+  flex: 30%;
+  position: relative; /*Needed for absolute positioning of text and images*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*Centers horizontally because its a column*/
+  overflow: hidden; /* Prevents child elements from overflowing*/
+}
+
+.column-2 {
+  flex: 40%;
+  background-color: #ffffff29;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /*Prevents child elements from overflowing*/
+}
+
+.column-3 {
+  flex: 30%;
+  position: relative; /*Needed for absolute positioning of text and images*/
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*Centers horizontally because its a column*/
+  overflow: hidden; /*Prevents child elements from overflowing*/
+}
+
+.clasp,
+.custom-nh34a,
+.normal-nh34a,
+.lume-text {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+  font-weight: italic;
+  z-index: 2; /*controls which elements are in the front or back*/
+}
+
+.clasp {
+  top: 2.5%; /*Adjust vertical position as a percentage*/
+}
+
+.custom-nh34a {
+  top: 15%; /*Adjust vertical position as a percentage*/
+}
+
+.normal-nh34a {
+  top: 30.5%; /*Adjust vertical position as a percentage*/
+}
+
+.lume-text {
+  top: 52.5%; /*Adjust vertical position as a percentage*/
+}
+
+/* For the images inside Column 3 */
+.NH34A,
+.lume,
+.watchback,
+.watchback2,
+.side-watch-1,
+.side-watch-2,
+.side-watch-3,
+.side-watch-4,
+.side-watch-5,
+.side-watch-6 {
+  position: absolute; /*keeps items in place*/
+  left: 50%; /*Centers the image horizontally*/
+  transform: translateX(-50%); /*Corrects the horizontal offset caused by above line*/
+  z-index: 1;
+}
+.watchback {
+  top: 2.5%; /*Set a vertical position for this image*/
+}
+.watchback2 {
+  top: 15%; /*Set a vertical position for this image*/
+}
+.NH34A {
+  top: 30.5%; /*Set the vertical position for this image*/
+}
+.lume {
+  top: 52.5%; /*Set the vertical position for this image*/
+}
+.side-watch-1 {
+  top: 5%; /*Set a vertical position for this image*/
+}
+.side-watch-2 {
+  top: 20%; /*Set a vertical position for this image*/
+}
+.side-watch-3 {
+  top: 35%; /*Set the vertical position for this image*/
+}
+.side-watch-4 {
+  top: 50%; /*Set the vertical position for this image*/
+}
+.side-watch-5 {
+  top: 65%; /*Set the vertical position for this image*/
+}
+.side-watch-6 {
+  top: 80%; /*Set the vertical position for this image*/
+}
+
+/*Defines the different font sizes, colors etc per type of writing*/
+body{background-color: black;} /*defines backround color*/
+h1 {color: white; text-align: center;}
+h2, h3, h4, p, li, i {color: white}
+h1, h2, h3, h4, h5, h6 {margin-top: 20px; margin-bottom: 15px;}
+h2 {font-family: verdana;font-size: 25px;}
+h3 {font-family: verdana;font-size: 20px;}
+h4 {font-family: verdana;font-size: 18px;}
+.home, .reviews, .contact {font-family: verdana}
+p, li {font-family: verdana;font-size: 15px; text-align: justify; line-height: 1.8;}
+
+.button-container {
+  display: flex; /*Enables flexbox layout*/
+  justify-content: center;
+  align-items: center;
+  height: auto; /*Makes the container fill the viewport height*/
+}
+
+.button {
+  background-color: crimson;
+  border: none;
+  color: white;
+  padding: 10px 15px; /*Adds more space for a balanced look*/
+  text-decoration: none;
+  display: inline-flex; /*Enables flexbox within the button*/
+  align-items: center; 
+  justify-content: center; 
+  margin: 4px 2px;
+  cursor: pointer;
+  gap: 10px; /*Adds spacing between the image and text*/
+  width: 25%; /*Percentage width of the button*/
+  height: 80%;
+  border-radius: 5px; /* Optional: Gives rounded corners */
+}
+
+/*size of the button*/
+.button img.button-icon {
+  width: 100%; /* Adjust the size of the icon */
+  height: 100%;
+}
+
+/*grid style to allow for better looks*/
+.list-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  justify-content: center;
+}
+
+
+#dropdown {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: crimson;
+  position: relative; /* Needed for positioning the logo */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(182, 7, 7);
+}
+
+/* Style for the positioned logo */
+#logo {
+  position: absolute; /* Allows it to position*/
+  left: 80%; 
+  transform: translateX(-80%); /* Perfect positioning */
+  top: 50%; /* Center vertically */
+  transform: translate(-80%, -50%); /* Perfect position both ways */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/*table css*/
+.image-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10;
+}
+.image-table td {
+  padding: 5px;
+  border: 0.5px solid #dddddd86;
+}
+.image-cell {
+  width: 50px;
+  text-align: center;
+}
+.image-cell img {
+  max-width: 40px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+tr:nth-child(even) {background-color: #3f3f3f;}
+.image-row img {
+  display: inline-block;
+  margin-right: 10px; /* Adds spacing between images */
+  margin: 0 auto;
+}
+
+/*backround image for home page and empty review page*/
+body.home-page {
+  background-image: url('https://www.silvana.com/app/uploads/movement-gears-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+body.blank-page {
+  background-image: url('https://m.media-amazon.com/images/M/MV5BNzZhNDc3OTItOWJmZi00OTMyLWE4OGQtMjg2NDNlNjk4ZTYxXkEyXkFqcGc@._V1_.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+/* Gallery Styles */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: calc(33.33% - 20px); /* Three items per row, minus gap */
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.gallery-item h3 {
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.container {
+  display: flex; /* Enable Flexbox */
+  gap: 10px; /* Add spacing between columns */
+  padding: 20px;
+}
+
+.column {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Define the relative sizes of the columns */
+.column-11 {
+  flex: 20%;
+  /*background-color: #3498db; /* Example background color */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevents child elements from overflowing */
+}
+
+.column-22 {
+  flex: 60%;
+  background-color: #ffffff48;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevents child elements from overflowing */
+}
+
+.column-222 {
+  flex: 60%;
+  background-color: #ffffff48;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevents child elements from overflowing */
+  height: 100vh;
+}
+
+.column-33 {
+  flex: 20%;
+  /*background-color: #e74c3c;*/
+  position: relative; /* Needed for absolute positioning of text and images */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
+  overflow: hidden; /* Prevents child elements from overflowing */
+}
+
+/*for quote in home page*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 1.4em;
+  width:100%;
+  margin:50px auto;
+  font: verdana;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid crimson ;
+  line-height:1.6;
+  position: relative;
+  background:#ededed8e;
+}
+blockquote::before{
+  font: verdana;
+  content: "\201C";
+  color:crimson;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+blockquote::after{
+  content: '';
+}
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+
+/*Basic Styling for Better Readability*/
+.contact-form {
+  width: 60%; 
+  margin: 10px auto; 
+  padding: 10px; 
+  background-color: rgba(220, 20, 60, 0.428); 
+  border: 1px solid #ddd; 
+  background-position: center; 
+}
+.form-group { 
+  margin-bottom: 15px; 
+}
+label { 
+  display: block; 
+  margin-bottom: 5px; 
+}
+input, textarea { 
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  box-sizing: border-box; 
+  border: 1px solid #ccc; 
+}
+input[type="submit"] { 
+  background-color: #4CAF50; 
+  color: #fff; padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+}
+input[type="submit"]:hover { 
+  background-color: #3e8e41; 
+}
+
+
+.site-footer {
+  background-color: #26272b;
+  color: #737373;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.site-footer a {
+  color: #737373;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.copyright-text {
+  margin: 10px 0 0;
+}
